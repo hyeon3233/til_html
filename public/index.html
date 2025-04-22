@@ -6,11 +6,10 @@
     <title>나의 til</title>
   </head>
   <body>
-    <!-- 전체 레이아웃 -->
-    <div>
+    <!-- 전체 레이아웃  -->
+    <div class="wrap">
       <!-- 상단 -->
-      <header>
-        <header class=""header">
+      <header class="header">
         <div class="layout">
           <!-- 상단의 위 -->
           <div class="header_top">
@@ -21,11 +20,11 @@
                   <img src="images/logo.svg" alt="로고" title="인터파크" />
                 </a>
               </div>
-              <!-- 제품 검색 -->
+              <!-- 제품검색 -->
               <div class="search">
                 <!-- 제품 검색 API 연동 -->
                 <form class="search_form">
-                  <input type="text" placeholder="제품을 검색해 주세요" />
+                  <input type="text" placeholder="제품을 검색해 주세요." />
                   <input type="submit" value="검색" />
                 </form>
               </div>
@@ -46,7 +45,7 @@
                 <li><a href="#">티켓</a></li>
               </ul>
             </div>
-            <div class="header_bottom_event">
+            <div class="header_bottom_eventmenu">
               <ul class="cupon">
                 <li>
                   <a href="#">
@@ -77,9 +76,26 @@
       </header>
       <!-- 메인 -->
       <main>
-        <div>
-          <!-- 이벤트 -->
-          <div></div>
+        <div class="layout">
+          <!-- Banner -->
+          <div class="banner">
+            <div class="banner_list">
+              <a href="#">
+                <img src="images/v1.png" alt="banner" title="배너" />
+              </a>
+            </div>
+            <div class="banner_list">
+              <a href="#">
+                <img src="images/v2.jpg" alt="banner2" title="배너2" />
+              </a>
+            </div>
+            <button class="slide_bt banner_left">
+              <img src="images/slider_arrow.svg" alt="left" title="left" />
+            </button>
+            <button class="slide_bt banner_right">
+              <img src="images/slider_arrow.svg" alt="right" title="right" />
+            </button>
+          </div>
           <!-- Tour -->
           <div></div>
           <!-- Trip -->
