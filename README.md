@@ -1,104 +1,21 @@
-# Heade 영역 html 작업해 보기
+# CSS
 
-```htlm
-<!DOCTYPE html>
-<html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>나의 til</title>
-  </head>
-  <body>
-    <!-- 전체 레이아웃 -->
-    <div>
-      <!-- 상단 -->
-      <header>
-        <header class=""header">
-        <div class="layout">
-          <!-- 상단의 위 -->
-          <div class="header_top">
-            <div class="header_top_left">
-              <!-- 로고 -->
-              <div class="logo">
-                <a href="http://www.interpark.com" target="_blank">
-                  <img src="images/logo.svg" alt="로고" title="인터파크" />
-                </a>
-              </div>
-              <!-- 제품 검색 -->
-              <div class="search">
-                <!-- 제품 검색 API 연동 -->
-                <form class="search_form">
-                  <input type="text" placeholder="제품을 검색해 주세요" />
-                  <input type="submit" value="검색" />
-                </form>
-              </div>
-            </div>
-            <div class="header_top_right">
-              <ul class="member">
-                <li><a href="#">로그인</a></li>
-                <li><a href="#">회원가입</a></li>
-              </ul>
-            </div>
-          </div>
-          <!-- 상단의 아래 -->
-          <div class="header_bottom">
-            <div class="header_bottom_nav">
-              <ul class="nav">
-                <li><a href="#">홈</a></li>
-                <li><a href="#">투어</a></li>
-                <li><a href="#">티켓</a></li>
-              </ul>
-            </div>
-            <div class="header_bottom_event">
-              <ul class="cupon">
-                <li>
-                  <a href="#">
-                    해외여행쿠폰
-                    <img
-                      src="images/badge_hot.svg"
-                      alt="해외여행쿠폰"
-                      title="해외여행쿠폰"
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    국내여행쿠폰
-                    <img
-                      src="images/badge_hot.svg"
-                      alt="국내여행쿠폰"
-                      title="국내여행쿠폰"
-                    />
-                  </a>
-                </li>
-                <li><a href="#">여행혜택존</a></li>
-                <li><a href="#">여행준비</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </header>
-      <!-- 메인 -->
-      <main>
-        <div>
-          <!-- 이벤트 -->
-          <div></div>
-          <!-- Tour -->
-          <div></div>
-          <!-- Trip -->
-          <div></div>
-          <!-- Ticket -->
-          <div></div>
-          <!-- Live -->
-          <div></div>
-        </div>
-      </main>
-      <!-- 하단 -->
-      <footer>
-        <div></div>
-      </footer>
-    </div>
-  </body>
-</html>
+- html 을 꾸며주기
+- display 중요함.
+- position 중요함.
 
-```
+## 1. css 작성법 3가지
+
+- 작성법 3가지 중에 누가 최종적으로 적용되는가? (누가 힘이 쎈가?)
+
+### 1.1. inline 방식
+
+- html 태그에 직접 작성해 주는 방식
+
+### 1.2. link 방식
+
+- file 로 작성해서 link 하는 방식 (경로/파일명.css)
+
+### 1.3. @import 방식
+
+- css 파일에서 또다른 css 파일을 참조하는 방식
