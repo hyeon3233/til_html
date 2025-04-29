@@ -1,50 +1,3 @@
-@charset "utf-8";
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("header.css");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  outline-style: none;
-}
-
-/* 태그 선택 : 추천하는 각 태그별 기본값 */
-a {
-  text-decoration: none;
-  /* 디자인 보고 수정 */
-  color: #000000;
-}
-ul {
-  list-style: none;
-}
-html {
-  width: 100%;
-  /* 디자인 보고 수정 */
-  font-size: 12px;
-}
-
-body {
-  width: 100%;
-  font-size: 1rem;
-  /* 디자인 보고 수정 */
-  color: #000000;
-  /* 글꼴이 필요로 함. */
-  font-family: "Segoe UI", Roboto, Arial, "Noto Sans", sans-serif;
-  letter-spacing: 0px;
-  word-spacing: 0px;
-}
-.wrap {
-  width: 100%;
-}
-.layout {
-  width: 1280px;
-  margin: 0 auto;
-  /* margin-top: 0;
-  margin-bottom: 0;
-  margin-left: auto;
-  margin-right: auto; */
-}
-
 .header {
   width: 100%;
   height: 163px;
@@ -95,13 +48,24 @@ body {
   background-color: #f7f7f8;
   border: none;
   border-radius: 0px 25px 25px 0px;
+  font-size: 0;
+  cursor: pointer;
+  background-color: red;
 }
 
 .header_top_right {
 }
 .member {
   display: flex;
+  gap: 20px;
 }
+.member > li > a {
+  font-size: 12px;
+  font-weight: 700;
+  color: #000000;
+  line-height: 16px;
+}
+
 .header_bottom {
   width: 100%;
   display: flex;
