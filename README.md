@@ -326,3 +326,30 @@ div {
 
 - magin (영역 바깥으로의 여백)
 - magin-top는 오류가 발생할 수 있음
+
+## position 을 꼭 기억하자.
+
+### 1. 내가 정확하게 px로 위치를 지정하고 싶다.
+
+- 아래 처럼 할때 정말 주의 해야함.
+- 바깥 영역에 `position: relative` 가 있어야함.
+
+```css
+position: absolute;
+left: 0px;
+top: 0px;
+right: 0px;
+bottom: 0px;
+```
+
+### 2. 내가 웹 브라우저에 특정 위치에 고정하고 싶다.
+
+-
+
+```css
+position: fixed;
+left: 0px;
+top: 0px;
+right: 0px;
+bottom: 0px;
+```
