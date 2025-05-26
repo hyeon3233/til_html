@@ -2,20 +2,23 @@
   position: relative;
   margin-top: 30px;
 }
-/* 스크롤 시 헤더가 반영이 안되는 부분을 반영해서 레이아웃 적용 */
+/* 스크롤시 헤더 높이가 반영안되는 부분 반영해서 레이아웃 적용 */
 .banner_fix {
   padding-top: 50px;
 }
 .banner_slide {
   display: flex;
-  gap: 15px;
+  gap: 25px;
+}
+.sw_banner {
+  border-radius: 15px;
 }
 
 .banner_list {
   border-radius: 15px;
   overflow: hidden;
 }
-/* 이미지가 영역에 가득 채워지고 비율이 유지 되도록 처리 */
+/* 이미지가 영역에 가득 채워지고 비율이 유지되도록 처리  */
 .banner_list img {
   width: 100%;
   height: 100%;
@@ -23,24 +26,44 @@
   object-fit: cover;
   display: block;
 }
-.slide_bt {
-  position: absolute;
-  top: 50%;
-  /* transform: translateY(-50%); */
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
 
-  border: 1px solid #e6e6e6;
-  background-color: rgba(255, 255, 255, 0.5);
-  box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.13);
-  z-index: 100;
+/* 반응형 코드 */
+.sw_banner_pg {
+  display: none;
+  bottom: -25px !important;
 }
-.banner_left {
-  left: 0;
-  transform: translateX(-50%) translateY(-50%) rotateY(180deg);
+
+@media all and (max-width: 1024px) {
+  .sw_banner_pg {
+    display: block;
+  }
+  /* 평상시 버튼 모습 */
+  .sw_banner_pg .swiper-pagination-bullet {
+  }
+  /* 포커스시 버튼 모습 */
+  .sw_banner_pg .swiper-pagination-bullet-active {
+    background-color: #000 !important;
+  }
 }
-.banner_right {
-  right: 0;
-  transform: translateX(50%) translateY(-50%);
+@media all and (max-width: 960px) {
+  .sw_banner {
+    width: 350px;
+  }
+  .sw_banner_pg {
+    bottom: 10px !important;
+  }
+  /* 평상시 버튼 모습 */
+  .sw_banner_pg .swiper-pagination-bullet {
+    width: 6px;
+    height: 6px;
+    opacity: 0.4;
+    background-color: #fff !important;
+  }
+  /* 포커스시 버튼 모습 */
+  .sw_banner_pg .swiper-pagination-bullet-active {
+    width: 7px;
+    height: 7px;
+    opacity: 1;
+    background-color: #fff !important;
+  }
 }
