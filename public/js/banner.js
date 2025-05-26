@@ -30,14 +30,14 @@ window.addEventListener("load", function () {
       const tempObj = _data[i];
 
       const tag = `
-        <div class="swiper-slide" id="${tempObj.id}">
-            <div class="banner_list">
-            <a href="${tempObj.url}">
-                <img src="${tempObj.img}" alt="${tempObj.alt}" title="${tempObj.alt}" />
-            </a>
-            </div>
+    <div class="swiper-slide" id="${tempObj.id}">
+        <div class="banner_list">
+        <a href="${tempObj.url}">
+            <img src="${tempObj.img}" alt="${tempObj.alt}" title="${tempObj.alt}" />
+        </a>
         </div>
-        `;
+    </div>
+    `;
       htmlTag = htmlTag + tag;
     }
 
@@ -53,12 +53,12 @@ window.addEventListener("load", function () {
       speed: 1500,
       loop: true,
       pagination: {
-        el: ".sw_banner .swiper-pagination",
+        el: ".sw_banner_pg",
         clickable: true,
       },
       navigation: {
-        nextEl: ".banner_right",
-        prevEl: ".banner_left",
+        nextEl: ".banner_next",
+        prevEl: ".banner_prev",
       },
       autoplay: {
         delay: 2500,
