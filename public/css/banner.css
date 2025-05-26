@@ -38,8 +38,11 @@
     display: block;
   }
 }
-@media all and (max-wudth: 960px) {
+@media all and (max-width: 960px) {
   .sw_banner {
     width: 350px;
+  }
+  .sw_banner_pg {
+    bottom: 10px !important;
   }
 }
