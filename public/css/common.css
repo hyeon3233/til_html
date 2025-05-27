@@ -97,3 +97,20 @@ body {
 .swiper-button-disabled {
   display: none !important;
 }
+
+/* 자연스러운 반응형 계산법 */
+.box_wrap {
+  position: relative;
+  width: 1280px;
+  width: 100%;
+
+  background-color: hotpink;
+  margin: 0 auto;
+}
+.box {
+  position: relative;
+  max-width: 650px;
+  width: 50.78%;
+  height: 400px;
+  background-color: yellowgreen;
+}
