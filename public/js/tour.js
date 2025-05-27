@@ -148,12 +148,27 @@ window.addEventListener("load", function () {
 
     // 3. 슬라이드를 생성해야 합니다.
     swTour = new Swiper(".sw_tour", {
-      slidesPerView: 3,
-      spaceBetween: 30,
-      slidesPerGroup: 3,
       navigation: {
         nextEl: ".tour_next",
         prevEl: ".tour_prev",
+      },
+      // 화면의 해상도에 따라서 작동
+      breakpoints: {
+        760: {
+          slidesPerView: 10,
+          spaceBetween: 30,
+          slidesPerGroup: 3,
+        },
+        1024: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+          slidesPerGroup: 3,
+        },
+        1280: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          slidesPerGroup: 3,
+        },
       },
     });
 
